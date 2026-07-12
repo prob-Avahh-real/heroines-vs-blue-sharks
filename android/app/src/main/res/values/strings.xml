@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">铿锵玫瑰 VS 蓝鲨</string>
+    <string name="title_activity_main">铿锵玫瑰 VS 蓝鲨</string>
+    <string name="package_name">game.pixel.heroinesbluesharks</string>
+    <string name="custom_url_scheme">game.pixel.heroinesbluesharks</string>
+</resources>

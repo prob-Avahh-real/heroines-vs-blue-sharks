@@ -1,0 +1,10 @@
+{
+  "appId": "game.pixel.heroinesbluesharks",
+  "appName": "铿锵玫瑰 VS 蓝鲨",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#061522"
+  }
+}

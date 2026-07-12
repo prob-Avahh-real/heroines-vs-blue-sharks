@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <meta name="theme-color" content="#071b2d" />
+    <title>铿锵玫瑰 VS 蓝鲨</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header class="scorebar" aria-live="polite">
+        <div class="team china"><span class="flag">🇨🇳</span><b>中国女足</b></div>
+        <div class="score"><span id="score">0 — 0</span><small id="clock">0'</small></div>
+        <div class="team cape"><b>佛得角男足</b><span class="flag">🇨🇻</span></div>
+      </header>
+
+      <section class="game-shell">
+        <canvas id="pitch" width="1280" height="720" aria-label="像素足球比赛画面"></canvas>
+        <div id="banner" class="banner">点击“开球”开始</div>
+        <button id="sensor" class="sensor" aria-label="启用手表或方向传感器">⌚ 体感</button>
+      </section>
+
+      <section class="controls" aria-label="比赛控制">
+        <div id="stick" class="stick" aria-label="虚拟摇杆">
+          <span class="stick-ring"></span><span id="knob" class="knob"></span>
+        </div>
+        <div class="actions">
+          <button id="switch" class="action secondary">切换</button>
+          <button id="pass" class="action pass" title="传球">传球</button>
+          <button id="shoot" class="action shoot" title="直接射门">射门</button>
+        </div>
+      </section>
+
+      <nav class="toolbar">
+        <button id="mode">模式：半自动</button>
+        <button id="pause">暂停</button>
+        <button id="restart">开球 / 重开</button>
+        <button id="help">玩法</button>
+      </nav>
+
+      <dialog id="helpDialog">
+        <h2>比赛手册</h2>
+        <p>11 人制加长球场。单局实时 5 分钟，HUD 显示 0'–90' 比赛时钟；上半场约 2.5 分钟后短暂中场休息，再踢满 90'。</p>
+        <p>中国女足使用 4-4-2 低位防反，佛得角使用 4-3-3 高压快攻；全自动下双方自动执行各自阵型与战术。</p>
+        <p><b>半自动：</b>球队自动跑位与防守；摇杆微调持球队员，传球/射门由系统辅助瞄准。</p>
+        <p><b>手动：</b>摇杆完全控制高亮球员；“切换”选择队友，传球/射门沿移动或朝向。</p>
+        <p><b>全自动：</b>双方均由 AI 对战，可纯观看比赛；移动/传球/射门输入无效，仍可暂停、重开与切模式。</p>
+        <p>键盘：WASD/方向键移动；空格/J 传球或抢断，K 射门；L 切换，P 暂停，M 切模式（半自动→手动→全自动）。</p>
+        <p>触屏：「传球」立即传球；「射门」直接射门。体感：倾斜移动，摇动传球/抢断。</p>
+        <button id="closeHelp">知道了</button>
+      </dialog>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

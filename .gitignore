@@ -14,3 +14,14 @@ android/.gradle/
 android/app/build/
 android/build/
 android/local.properties
+
+# Build, cache & secret exclusions
+.npm-cache/
+.build/
+DerivedData/
+.gradle/
+__pycache__/
+.venv/
+*.apk
+*.aab
+*.ipa
